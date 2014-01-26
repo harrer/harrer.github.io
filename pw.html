@@ -5,13 +5,22 @@
 <title>My Page</title>
 </head>
 <body>
-<div id="header_wrap" class="outer" align="center">
-<section id="main_content" class="inner">
-<form name="myform" method="POST" action="test.php" enctype="multipart/form-data">
-<input type="text" size="35" value="Enter length of password (max 45)" name="length">
-<br><input type="submit" value="Get password"><br>
-<a href="/test.php?l=10">click here to get a new password with length 10</a><br>
-</form>
+	<!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+			<h2 id="project_title">Password generator</h2>
+        </header>
+    </div>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+		<form name="myform" method="POST" action="test.php" enctype="multipart/form-data">
+			<input type="text" size="35" value="Enter length of password (max 45)" name="length">
+			<br><input type="submit" value="Get password"><br>
+			<a href="/test.php?l=10">click here to get a new password with length 10</a><br>
+		</form>
+	  </section>
+	</div>
 </section>
 </div>
 </body>

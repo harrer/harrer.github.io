@@ -9,9 +9,9 @@
 			<?php
 				$l = isset($_POST['length'])? $_POST['length'] : 12;
 				$l = isset($_GET['l'])? $_GET['l']: $l;
-				echo("<pre>Your password with length ".$l." is:</pre>\n</div><br>\n<div id=\"content_wrap\" class=\"outer\"><section id=\"main_content\" class=\"inner\"><a>");
+				echo("<pre>Your password with length ".$l." is:</pre>\n</div><br>\n<div align=\"center\" id=\"content_wrap\" class=\"outer\"><section align=\"center\" id=\"main_content\" class=\"inner\"><a>");
 				system("openssl rand -base64 32 | head -c ".$l);
-				echo("<br><a href=\"test.php?l=".$l."\">Get another one</a>");
+				echo("<br><br><a href=\"test.php?l=".$l."\">Get another one</a>");
 			?>
 			</a>
 			</section>
